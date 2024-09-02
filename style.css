@@ -1,0 +1,83 @@
+body {
+    background-image: url("C:/Users/Yalda/Desktop/73944581250746Ai.jpg");
+    background-size: cover;
+    
+}
+.container {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(566, 566, 566, 0.2);
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 40px;
+    font-family: "Nunito", sans-serif;
+}
+.firstcontainer {
+    background-color: #232931;
+    max-width: 350px;
+    width: 100%;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    
+
+}
+.heading, #current-weather {
+    font-size: 48px;
+}
+#current-place {
+    font-size: 38px;
+}
+#location_on {
+    font-size: 28px;
+}
+#current-weather-emoji {
+    font-size: 60px;
+}
+#current-weather-description, #current-date {
+    font-size: 30px;
+
+}
+.search-city-input, .search-city-submit {
+    position: relative;
+    top: -440px;
+    height: 40px;
+    background-color: white;
+    border-radius: 35px;
+    border-color: white;
+    padding-left: 10px;
+}
+.search-city-input {
+    width: 270px;
+    left: 430px;
+}
+.search-city-submit {
+    width: 80px;
+    left: 430px;
+}
+  
+footer {
+    text-align: center;
+    color: white;
+}
+#second-container .name, .humadity, .wind, .coordinates, .temperature {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    
+}
+#second-container {
+    
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(566, 566, 566, 0.0);
+    width: 370px;
+    margin-left: 430px;
+    margin-top: -380px;
+}
