@@ -65,12 +65,11 @@ footer {
     text-align: center;
     color: white;
 }
-#second-container .name, .humadity, .wind, .coordinates, .temperature {
+#second-container .name, .humadity, .wind, .coordinates,.appearantly {
     
     display: flex;
     justify-content: space-between;
     padding: 0.4rem 0;
-    
 }
 #second-container {
     
