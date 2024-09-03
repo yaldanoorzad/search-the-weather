@@ -24,14 +24,16 @@ function showtemperature(response) {
     humidity.innerHTML = `${response.data.temperature.humidity}%`;
 
     let wind = document.querySelector("#wind");
-    wind.innerHTML = `${response.data.wind.speed} km/hr`;
+    wind.innerHTML = `${response.data.wind.speed}km/h`;
 
     let feelslike = document.querySelector("#temperature");
     feelslike.innerHTML = `${Math.round(response.data.temperature.feels_like)}°C`;
 
     let coordinates = document.querySelector("#coordinates");
-    coordinates.innerHTML = response.data.coordinates;
+    coordinates.innerHTML = `${response.data.coordinates.latitude}°N, ${response.data.coordinates.longitude}°E`;
 
+    let appicon = document.querySelector("#current-weather-emoji")
+    appicon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`
 }
 
 let now = new Date();
@@ -41,9 +43,15 @@ let currentdate = now.getDate();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 let currentmonth = months[now.getMonth()];
 
-   
+let days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let currentday = days[now.getDate()];
+let weekday = document.querySelector(".heading");
+weekday.innerHTML = currentday;
+
 let currentdateElement = document.querySelector("#current-date");
 currentdateElement.innerHTML = `${currentdate} ${currentmonth} ${currentyear}`;
+
+
 
 let searchform = document.querySelector("#search-form");
 searchform.addEventListener("submit", showcity);

@@ -1,5 +1,5 @@
 body {
-    background-image: url("C:/Users/Yalda/Desktop/73944581250746Ai.jpg");
+    background-image: url("https://github.com/yaldanoorzad/search-the-weather/blob/b32ef66c9d2a8495c232239f87ce611177052228/background/73944581250746Ai.jpg");
     background-size: cover;
     
 }
@@ -39,6 +39,7 @@ body {
 #current-weather-emoji {
     font-size: 60px;
 }
+
 #current-weather-description, #current-date {
     font-size: 30px;
 
@@ -79,4 +80,7 @@ footer {
     width: 370px;
     margin-left: 430px;
     margin-top: -380px;
+}
+#coordinates {
+    font-size: 13px;
 }
