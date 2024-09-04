@@ -1,4 +1,5 @@
 
+
 function showcity(event) {
     event.preventDefault();
     let cityinput = document.querySelector(".search-city-input");
