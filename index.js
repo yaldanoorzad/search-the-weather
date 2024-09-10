@@ -38,6 +38,7 @@ function showtemperature(response) {
 }
 
 let now = new Date();
+
 let currentyear = now.getFullYear();
 let currentdate = now.getDate();
 
@@ -45,7 +46,6 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 let currentmonth = months[now.getMonth()];
 
 let days = [
-    "Saturday",
     "Sunday",
     "Monday",
     "Tuesday",
