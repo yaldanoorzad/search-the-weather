@@ -45,6 +45,7 @@ let currentdate = now.getDate();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 let currentmonth = months[now.getMonth()];
 
+
 let days = [
     "Sunday",
     "Monday",
@@ -53,10 +54,10 @@ let days = [
     "Thursday",
     "Friday",
     "Saturday",
-  ];
+];
 let day = days[now.getDay()];
 let currentday = document.querySelector(".heading");
-currentday.innerHTML= day;
+currentday.innerHTML = day;
 
 let currentdateElement = document.querySelector("#current-date");
 currentdateElement.innerHTML = `${currentdate} ${currentmonth} ${currentyear}`;
