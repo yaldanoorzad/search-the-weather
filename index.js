@@ -44,10 +44,19 @@ let currentdate = now.getDate();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 let currentmonth = months[now.getMonth()];
 
-let days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let currentday = days[now.getDate()];
-let weekday = document.querySelector(".heading");
-weekday.innerHTML = currentday;
+let days = [
+    "Saturday",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+let day = days[now.getDay()];
+let currentday = document.querySelector(".heading");
+currentday.innerHTML= day;
 
 let currentdateElement = document.querySelector("#current-date");
 currentdateElement.innerHTML = `${currentdate} ${currentmonth} ${currentyear}`;
